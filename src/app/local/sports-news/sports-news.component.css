@@ -1,0 +1,9 @@
+h2{
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px 0px ;
+  color: rgb(2, 47, 58);
+}
+.row{
+  float: right;
+}

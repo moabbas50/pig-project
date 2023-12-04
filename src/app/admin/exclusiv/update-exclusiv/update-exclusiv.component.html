@@ -1,0 +1,31 @@
+<app-naveadmin></app-naveadmin>
+<section id="contact" class="contact">
+  <div class="container pt-5 mt-5 " data-aos="zoom-out">
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+    <div class="row g-5">
+      <div class="col-12">
+        <div class="form-group mb-3">
+          <label for="">Title</label>
+          <input  type="text" class="form-control"
+          [(ngModel)]="exclusiv.title"
+          >
+        </div>
+        <div class="form-group mb-3">
+          <label for="">Content</label>
+          <textarea  class="form-control" name="" id="" cols="30" rows="10"
+          [(ngModel)]="exclusiv.content"></textarea>
+        </div>
+        <div class="form-group mb-3">
+          <label for="">Imgurl</label>
+          <input  type="text" class="form-control"
+          [(ngModel)]="exclusiv.imgurl">
+        </div>
+        <div class="form-group mb-3 text-center">
+          <button  (click)="updatesportn()" class="btn btn-primary">UpDate</button>
+        </div>
+      </div>
+
+    </div>
+    </form>
+  </div>
+</section>

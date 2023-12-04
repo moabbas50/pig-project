@@ -1,0 +1,26 @@
+.logform{
+  box-shadow: 0 0 10px black;
+  width: 50%;
+  padding-top: 25px ;
+  color: rgb(36, 36, 36);
+}
+.logform input  {
+border: 1px solid rgba(0, 0, 0, 0.342);
+
+}
+
+.logform label  {
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+h1{
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+button{
+  color: rgb(185, 185, 185);
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,49 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+ body{
+  background-color:white;
+  color:black;
+
+}
+a {
+  color: #24b7a4;
+  text-decoration: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  color: #36d8c3;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,label {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#main {
+  position: relative;
+}
+
+
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact .php-email-form {
+  color: black;
+
+  padding: 30px;
+  background:white;
+  box-shadow: 0 0 24px 0 rgb(126, 126, 126);
+}
+.contact .php-email-form p{
+  font-size: smaller;
+}
+

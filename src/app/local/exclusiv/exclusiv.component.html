@@ -1,0 +1,35 @@
+<app-nave></app-nave>
+<main id="main">
+  <section id="contact" class="contact">
+    <div class="container-fluid ">
+      <div class="section-title text-center">
+        <h2>Al khaber Exclusiv news</h2>
+      </div>
+      <div class="row justify-content-end ">
+        <div class=" col-lg-10">
+          <div class="   row" *ngFor="let item of exclusiv">
+            <div class="col-lg-12 mt-5 mb-3 mt-lg-0 d-flex align-items-stretch m-auto">
+              <div  class="php-email-form">
+                <div class="row" >
+                  <div class="img col-lg-5 d-flex">
+                    <img src="{{item.imgurl}}" alt="" style="width: 70%; height: 100%;">
+                  </div>
+                  <div class="text-end col-lg-7 mt-5 mt-lg-0">
+                    <h3 class=""> {{item.title}}</h3>
+                    <hr>
+                    <p>{{item.description}}  <a routerLink="/shownews/{{item.id}}/3">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section><!-- End Contact Us Section -->
+
+</main>
