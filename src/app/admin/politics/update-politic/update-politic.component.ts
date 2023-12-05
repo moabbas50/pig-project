@@ -9,24 +9,24 @@ import { PoliticalapiService } from 'src/app/servec/politicalapi.service';
   styleUrls: ['./update-politic.component.css']
 })
 export class UpdatePoliticComponent {
-  politicnews = new politicNews()
-  id!:any
-  constructor(public service:PoliticalapiService,private activerout:ActivatedRoute,public router :Router){
+  politicnews = new politicNews
+  id!: any
+  constructor(public service: PoliticalapiService, private activerout: ActivatedRoute, public router: Router) {
     this.service.auth();
-  this.id=this.activerout.snapshot.paramMap.get('id');
-  this.service.getById(this.id).subscribe((data)=>{
-    this.politicnews=data;
-  })
+    this.id = this.activerout.snapshot.paramMap.get('id');
+    this.service.getById(this.id).subscribe((data) => {
+      this.politicnews = data;
+    })
   }
-  updatesportn(){
-    if(this.politicnews.content.length>90){
-      this.politicnews.description=this.politicnews.content.substring(0,80)+"..."
-      this.service.update(this.id,this.politicnews).subscribe((data) => {
+  updatesportn() {
+    if (this.politicnews.content.length > 90) {
+      this.politicnews.description = this.politicnews.content.substring(0, 80) + "..."
+      this.service.update(this.id, this.politicnews).subscribe((data) => {
         this.router.navigateByUrl('/listpoliticadmin');
       })
-    }else{
-      this.politicnews.description=this.politicnews.content +"...";
-      this.service.update(this.id,this.politicnews).subscribe((data) => {
+    } else {
+      this.politicnews.description = this.politicnews.content + "...";
+      this.service.update(this.id, this.politicnews).subscribe((data) => {
         this.router.navigateByUrl('/listpoliticadmin');
       })
     }

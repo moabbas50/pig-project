@@ -3,7 +3,7 @@
   width: 100%;
 }
 .NEW .text-end p{
-font-size: 25px;
+font-size: 17.5px;
 }
 .NEW h1{
   color: rgb(70, 1, 1);
@@ -14,13 +14,13 @@ font-size: 25px;
 }
 .hash .bar{
   border: 1px solid rgb(196, 196, 196);
-  background-color: darkgray;
+  background-color: rgb(255, 253, 253);
 }
 .contact .php-email-form {
   color: rgb(68, 68, 68);
   border-top: 3px solid #363636;
   border-bottom: 3px solid #363636;
   padding: 30px;
-  background: rgba(165, 165, 165, 0.911);
+  background: rgba(165, 165, 165, 0.233);
   box-shadow: 0 0 24px 0 rgb(0, 0, 0);
 }
